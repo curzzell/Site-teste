@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Veterinárias</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .services, .contact {
+            margin-top: 20px;
+        }
+        .services h2, .contact h2 {
+            color: #2a9d8f;
+        }
+        footer {
+            background-color: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2a9d8f;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #21867a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consultas Veterinárias</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#schedule">Agende uma Consulta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="services" class="services">
+            <h2>Serviços Oferecidos</h2>
+            <p>Oferecemos uma ampla gama de serviços para cuidar da saúde e bem-estar do seu pet:</p>
+            <ul>
+                <li>Consultas de rotina</li>
+                <li>Vacinação</li>
+                <li>Cirurgias</li>
+                <li>Exames laboratoriais</li>
+                <li>Emergências</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+            <p>Email: contato@consultasveterinarias.com</p>
+            <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+        </section>
+
+        <section id="schedule" class="schedule">
+            <h2>Agende uma Consulta</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Telefone" required>
+                <textarea placeholder="Mensagem ou Informações Adicionais" rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Consultas Veterinárias. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
